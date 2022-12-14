@@ -5,10 +5,10 @@
     background: #FFFFFF;
     border-color:rgba(0, 16, 61, 0.12) ;
     font-size: 18px;
-    /* border: 1px solid rgba(0, 16, 61, 0.12); */
     border-radius: 8px;
     flex: none;
     order: 0;
     align-self: stretch;
     flex-grow: 0;
+    padding: 10px;
  } 
