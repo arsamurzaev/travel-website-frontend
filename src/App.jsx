@@ -1,5 +1,6 @@
+import PersonalData from "./components/PersonalData/PersonalData";
 
-import PersonalData from './components/personalData/personalData';
+
 const App = () => {
   return (
     <div className="App">
