@@ -1,4 +1,4 @@
-const App = () => {
+сonst App = () => {
   return (
     <div className="App">
      
