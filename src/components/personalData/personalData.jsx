@@ -31,7 +31,7 @@ const PersonalData = () => {
 
   const [gender, setGender] = useState('Мужской')
   
-  console.log(gender, document);
+  
   return (
     <div className={styles.container}>
       <div className={styles.content}>
