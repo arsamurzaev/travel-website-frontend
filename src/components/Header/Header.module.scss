@@ -1,0 +1,73 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.header{
+    max-width: 85%;
+    height: 80px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    button{
+        padding: 13px 40px;
+        border: none;
+        border-radius: 14px;
+        margin-left: 40px;
+        color:  #AE5FFF ;
+        font-family: 'Inter';
+        border: 2px solid #AE5FFF;
+        font-weight: 600;
+        font-size: 14px;
+        background-color: transparent;
+        cursor: pointer;
+        &:hover{
+            background: linear-gradient(92.47deg, #AE5FFF 0%, #AE5FFF 0.01%, #AE5FFF 0.02%, #6B1EFF 106.32%);
+            color: white;
+    
+        }
+     
+    }
+   
+}
+.help{
+    width: 330px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .vector{
+        display: flex;
+        align-items: center;
+        p{
+            margin-left: 10px;
+        }
+    }
+}
+.icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100px;
+    img{
+        cursor: pointer;
+    }
+    .user{
+        cursor: pointer;
+        width: 24px;
+        height: 24px;
+        border-radius: 10px;
+        background: rgba(0, 28, 61, 0.08);
+        text-align: center;
+    }
+}
+.infa{
+    width: 460px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

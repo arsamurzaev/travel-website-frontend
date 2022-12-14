@@ -1,9 +1,7 @@
-
-import PersonalData from './components/personalData/personalData';
-const App = () => {
+сonst App = () => {
   return (
     <div className="App">
-      <PersonalData />
+     
     </div>
   );
 }
