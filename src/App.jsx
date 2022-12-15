@@ -1,3 +1,4 @@
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Card from './components/Cards/Main-card-toor/Card'
 
@@ -8,5 +9,4 @@ const App = () => {
     </div>
   );
 }
-
 export default App;
