@@ -76,6 +76,6 @@ h6 {
 }
 
 .container {
-  max-width: 85%;
+  width: 1200px;
   margin: auto;
 }

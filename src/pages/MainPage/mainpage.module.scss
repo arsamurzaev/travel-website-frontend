@@ -1,0 +1,61 @@
+.burningTours {
+    width: 1200px;
+    .row {
+        display: flex;
+        justify-content: space-between;
+        .carousel {
+            width: 787px;
+            height: 450px;
+        }
+        .item {
+            width: 381px;
+            height: 209px;
+            padding: 32px;
+            background: #fcf9ff;
+            box-shadow: 0px 2px 4px rgba(14, 31, 53, 0.12);
+            border-radius: 24px;
+            overflow: hidden;
+            position: relative;
+            background: url("../../img/unggggggggggtitled\ 1.png") right top no-repeat;
+            &:last-child {
+                background: url("../../img/untillltled\ 1.png") right top no-repeat;
+            }
+            &::after {
+                width: 200px;
+                height: 200px;
+                content: "";
+                position: absolute;
+                right: -51px;
+                top: -51px;
+                background: linear-gradient(
+                    92.47deg,
+                    rgba(174, 95, 255, 0.1) 0%,
+                    rgba(174, 95, 255, 0.1) 0.01%,
+                    rgba(174, 95, 255, 0.1) 0.02%,
+                    rgba(107, 30, 255, 0.1) 106.32%
+                );
+                border-radius: 100%;
+            }
+
+            &:first-child {
+                margin-bottom: 32px;
+            }
+            .title {
+                font-weight: 600;
+                font-size: 25px;
+                line-height: 120%;
+                color: #2c2d2e;
+                width: 200px;
+                margin-bottom: 12px;
+            }
+            .text {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 130%;
+                color: #2c2d2e;
+                width: 200px;
+            }
+        }
+    }
+}
+
