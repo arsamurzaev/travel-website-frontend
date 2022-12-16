@@ -33,7 +33,7 @@ const MainPage = () => {
         <div className="container">
           <div className={styles.toursRussia}>
             <h2 className={styles.title}>Подборка туров по России и Абхазии</h2>
-            <div className={styles.row}></div>
+            <div className={styles.row}>'1'</div>
           </div>
         </div>
       </section>
