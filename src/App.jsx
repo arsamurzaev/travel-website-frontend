@@ -1,10 +1,8 @@
-import CallTour from "./components/Tour/CallTour";
-
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 const App = () => {
   return (
     <div className="App">
-      <CallTour />
+
     </div>
   );
 }
