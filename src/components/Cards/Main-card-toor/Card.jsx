@@ -1,9 +1,9 @@
 import React from "react";
 import styles from "./CardMain.module.scss";
-import img from "../../../Images/Rectangle9.png";
+import img from "../../../img/Card/Rectangle 9.png";
 import { Carousel } from "react-bootstrap";
 
-export default function Card () {
+const Card = () => {
   return (
     <>
       <div className={styles.card}>
@@ -13,22 +13,18 @@ export default function Card () {
           </Carousel.Item>
           <Carousel.Item>
             <img className="d-block w-100" src={img} alt="none" />
-            
           </Carousel.Item>
           <Carousel.Item>
             <img className="d-block w-100" src={img} alt="none" />
-            
           </Carousel.Item>
           <Carousel.Item>
             <img className="d-block w-100" src={img} alt="none" />
-            
           </Carousel.Item>
           <Carousel.Item>
             <img className="d-block w-100" src={img} alt="none" />
-            
           </Carousel.Item>
         </Carousel>
-            <button className={styles.heart}>♡</button>
+        <button className={styles.heart}>♡</button>
 
         <div className={styles.dosc}>
           <div className={styles.info}>
@@ -44,4 +40,6 @@ export default function Card () {
       </div>
     </>
   );
-}
+};
+
+export default Card;

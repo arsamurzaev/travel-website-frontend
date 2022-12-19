@@ -76,6 +76,6 @@ h6 {
 }
 
 .container {
-  width: 1200px;
+  width: 1230px !important;
   margin: auto;
 }
