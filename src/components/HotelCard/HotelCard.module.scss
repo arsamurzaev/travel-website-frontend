@@ -1,0 +1,135 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.card {
+  width: 660px;
+  height: 300px;
+  border: 1px solid rgba(0, 16, 61, 0.12);
+  box-shadow: 0px 2px 4px rgba(14, 31, 53, 0.12);
+  border-radius: 24px;
+  display: flex;
+}
+.image {
+  position: relative;
+  
+  .buttonLike {
+    position: absolute;
+    left: 16px;
+    top: 16px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgba(0, 16, 61, 0.12);
+    background-color: #fff;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.infa {
+  width: 434px;
+  margin: auto;
+
+  .nameHotel {
+    width: 167px;
+
+    .star {
+      display: flex;
+      justify-content: space-between;
+      width: 80px;
+    }
+    h1 {
+      font-family: "Inter";
+      font-weight: 600;
+      font-size: 18px;
+      color: #005bd1;
+      margin-top: 6px;
+    }
+    p {
+      font-family: "Inter";
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 16px;
+      color: #919399;
+    }
+  }
+  .location {
+    margin-top: 15px;
+    width: 230px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    div {
+      display: flex;
+      p {
+        margin-left: 5px;
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: #2c2d2e;
+      }
+    }
+  }
+  .plusHotel {
+    width: 90%;
+    margin-top: 10px;
+    ul {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      li {
+        font-family: "Inter";
+        color: #2c2d2e;
+      }
+    }
+  }
+  .price {
+    margin-top: 25px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .infaAirplane {
+      width: 223px;
+      height: 15px;
+      display: flex;
+      justify-content: space-between;
+      div {
+        display: flex;
+        align-items: center;
+       
+      }
+      p {
+        font-family: "Inter";
+        font-size: 12px;
+        color: #919399;
+      }
+    }
+    button {
+      padding: 13px 30px;
+      background: linear-gradient(
+        92.47deg,
+        #ae5fff 0%,
+        #ae5fff 0.01%,
+        #ae5fff 0.02%,
+        #6b1eff 106.32%
+      );
+      border-radius: 16px;
+      color: white;
+      border: none;
+      font-weight: 600;
+      font-size: 16px;
+    }
+  }
+}
+.image{
+  border-radius: 24px 0px 0px 24px;
+}
