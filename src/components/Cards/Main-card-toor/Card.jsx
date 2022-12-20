@@ -24,7 +24,7 @@ const Card = () => {
             <img className="d-block w-100" src={img} alt="none" />
           </Carousel.Item>
         </Carousel>
-        <button className={styles.heart}>♡</button>
+        <button className={styles.heart}></button>
 
         <div className={styles.dosc}>
           <div className={styles.info}>
