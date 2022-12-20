@@ -1,0 +1,88 @@
+.card{
+    width: 80%;
+    margin: auto;
+    border: 1px solid rgba(0, 16, 61, 0.12);
+    box-shadow: 0px 2px 4px rgba(14, 31, 53, 0.12);
+    border-radius: 24px;
+    
+
+    .info{
+        padding: 20px;
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 50px;
+        .data{
+            display: flex;
+            .data_info{
+                .den{
+                    font-size: 12px;
+                }
+            }
+
+            .user{
+
+                .d{ 
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: white;
+                    background-color: #005BD1;
+                    border-radius: 50%;
+                    width: 25px;
+                    height: 25px;
+                    margin-left: 5px;
+                }
+            }
+            
+        }
+        .ikona{
+            display: flex;
+            width: 50%;
+
+            img{
+                border-radius: 30%;
+                margin-right: 8px;
+            }
+            .inf{
+                margin-top: 4px;
+                .s{
+                    font-weight: 600;
+                    font-size: 18px;
+                    color: #005BD1;
+                }
+            }
+        }
+        .all{
+            span{
+                display: block;
+            }
+        }
+    }
+    .info2{
+
+        display: flex;
+        background: #FCF9FF;
+        border-radius: 0px 0px 24px 24px;
+        padding: 10px 20px ;
+
+        button{
+            border: none;
+            background: #FCF9FF;
+        }
+        div{
+            font-size: 25px;
+            font-weight: 600;
+        }
+        .btn{
+            font-size: 16px;
+            margin-right: 65%;
+        }
+        .btn2{
+            margin-left: 20px;
+            padding: 0 50px 0 50px;
+            color: white;
+            background: linear-gradient(92.47deg, #AE5FFF 0%, #AE5FFF 0.01%, #AE5FFF 0.02%, #6B1EFF 106.32%);
+            border-radius: 16px;
+        }
+    }
+}
