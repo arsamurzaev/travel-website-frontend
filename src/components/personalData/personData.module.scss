@@ -234,6 +234,35 @@
     }
 }
 
+.adress_input{
+    >h4{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 130%;
+        color: #2C2D2E;
+    }
+    >p{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+        color: #919399;
+        margin: 0;
+        padding: 0;
+    }
+    >input{
+        padding: 10px;
+        width: 892px;
+        height: 52px;
+        background: #FFFFFF;
+        border: 1px solid rgba(0, 16, 61, 0.12);
+        border-radius: 8px;
+        font-size: 18px;
+    }
+}
 .documents{
     margin-top: 150px;
     .content_documents{
