@@ -9,6 +9,7 @@ import { addUser } from "../../app/features/userDataSlice";
 
 const PersonalData = () => {
   // const addUsers = useSelector((state)=>state.userData.users)
+  //useState
 
   const dispatch = useDispatch();
 

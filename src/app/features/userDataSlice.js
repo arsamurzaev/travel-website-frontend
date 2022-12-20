@@ -5,7 +5,7 @@ const initialState = {
     error: null, 
     loading: false
 }
-
+//redux toolkit
 export const addUser = createAsyncThunk("dataUser/add", async(data, thunkAPI)=>{
     console.log(data);
     try {
