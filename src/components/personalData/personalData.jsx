@@ -4,7 +4,15 @@ import PhoneInput from "react-phone-number-input";
 import { useState } from "react";
 import "react-phone-number-input/style.css";
 import "./style.css";
+import { useDispatch } from "react-redux";
+import { addUser } from "../../app/features/userDataSlice";
+
 const PersonalData = () => {
+  // const addUsers = useSelector((state)=>state.userData.users)
+  //useState
+
+  const dispatch = useDispatch();
+
   const [phone, setPhone] = useState("");
 
   const [firstName, setFirstName] = useState("");
@@ -17,6 +25,8 @@ const PersonalData = () => {
 
   const [dateBird, setDateBird] = useState("");
 
+  const [fullAdress, setFulAdress] = useState('')
+
   const [documentSeries, setDocumentSeries] = useState("");
 
   const [documentNumber, setDocumentNumber] = useState("");
@@ -27,11 +37,46 @@ const PersonalData = () => {
 
   const [documentDivision, setDocumentDivision] = useState("");
 
-  const [document, setDocument] = useState('Паспорт')
+  const [document, setDocument] = useState("Паспорт");
 
-  const [gender, setGender] = useState('Мужской')
-  
-  
+  const [gender, setGender] = useState("Мужской");
+
+
+  const handleAddUser = () => {
+    dispatch(
+      addUser({
+        firstName,
+        secondName,
+        lastName,
+        mail,
+        phone,
+        dateBird,
+        gender,
+        fullAdress,
+        document,
+        documentSeries,
+        documentNumber,
+        documentIssued,
+        dateDocument,
+        documentDivision
+      }),
+      // setPhone(''),
+      // setFirstName(''),
+      // setSecondName(''),
+      // setLastName(''),
+      // setMail(''),
+      // setDateBird(''),
+      // setFulAdress(''),
+      // setDocumentSeries(''),
+      // setDocumentNumber(''),
+      // setDateDocument(''),
+      // setDocumentIssued(''),
+      // setDocumentDivision(''),
+      // setDocument(''),
+      // setGender(''),
+    );
+  };
+
   return (
     <div className={styles.container}>
       <div className={styles.content}>
@@ -91,6 +136,7 @@ const PersonalData = () => {
             />
           </div>
         </div>
+
         <div className={styles.b_of_d}>
           <div className={styles.birdOfDate}>
             <h3>Дата рождения</h3>
@@ -102,18 +148,23 @@ const PersonalData = () => {
           </div>
           <div className={styles.gender}>
             <p>Пол</p>
-            <select onChange={(e)=>setGender(e.target.value)}>
-              <option selected = {true}> Мужской </option>
+            <select onChange={(e) => setGender(e.target.value)}>
+              <option selected={true}> Мужской </option>
               <option> Женский</option>
             </select>
           </div>
+        </div>
+        <div className={styles.adress_input}>
+          <h4>Адрес</h4>
+          <p>Адрес по прописке (по паспорту)</p>
+          <input value={fullAdress} onChange={(e)=>setFulAdress(e.target.value)} type="text" />
         </div>
         <div className={styles.documents}>
           <h4>Документы</h4>
           <div className={styles.content_documents}>
             <div className={styles.document_pasp}>
               <p>Документ</p>
-              <select onChange={(e)=> setDocument(e.target.value)}>
+              <select onChange={(e) => setDocument(e.target.value)}>
                 <option selected={true}>Паспорт</option>
                 <option>Загран паспорт</option>
               </select>
@@ -162,7 +213,7 @@ const PersonalData = () => {
             </div>
           </div>
         </div>
-        <button>Сохранить изменения</button>
+        <button onClick={() => handleAddUser()}>Сохранить изменения</button>
       </div>
     </div>
   );
