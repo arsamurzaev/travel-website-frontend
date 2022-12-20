@@ -1,4 +1,4 @@
-import Nav from './components/navigation/NavigationDesc/index'
+import Nav from './components/navigation/NavigationMap/index'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
