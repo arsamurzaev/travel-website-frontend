@@ -1,10 +1,11 @@
 
-import Header from './components/Header'
-import Tour from './components/Tour/Tour';
-import Footer from './components/Footer'
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 const App = () => {
   return (
     <div className="App">
+    
+
     </div>
   );
 }
