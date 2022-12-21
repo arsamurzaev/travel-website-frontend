@@ -139,7 +139,7 @@ const Footer = () => {
               </clipPath>
             </defs>
           </svg>
-          <p>© 2022 I LIKE TRAVEL</p>
+          <p>© 2022 I LIKE INGUSHETIYA</p>
         </div>
 
         <div className={styles.registry}>

@@ -1,6 +1,9 @@
 import React from 'react';
+import { useState } from 'react';
 import styles from "./callTour.module.scss"
-const CallTour = () => {
+const CallTour = (value) => {
+    const  listSort = [{raiting: "Популярности"}, {price:"Цена"}] 
+    const sortName = listSort[value].name
     return (
         <div className={styles.container}>
             <div className={styles.content}>
