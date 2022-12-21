@@ -156,6 +156,7 @@ const MainPage = () => {
       </section>
       <Footer />
     </main>
+    
   );
 };
 
