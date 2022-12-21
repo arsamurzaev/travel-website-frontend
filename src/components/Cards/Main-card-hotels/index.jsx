@@ -7,8 +7,8 @@ import { Link } from "react-router-dom";
 const HotelCard = () => {
   return (
     <>
-      <Link>
-        <div className={styles.card}>
+      <div className={styles.card}>
+        <Link>
           <Carousel>
             <Carousel.Item>
               <img className="d-block w-100" src={img} alt="none" />
@@ -43,8 +43,8 @@ const HotelCard = () => {
 
             <button className={styles.btn}>от 61 028 ₽ </button>
           </div>
-        </div>
-      </Link>
+        </Link>
+      </div>
     </>
   );
 };

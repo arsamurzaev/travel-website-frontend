@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 
 const StockCard = () => {
   return (
-    <Link>
-      <div className={styles.card}>
+    <div className={styles.card}>
+      <Link>
         <div className={styles.info}>
           <div className={styles.date}>Бессрочная</div>
           <div className={styles.title}>
@@ -15,8 +15,8 @@ const StockCard = () => {
         <div className={styles.img}>
           <img src={img} alt="" />
         </div>
-      </div>
-    </Link>
+      </Link>
+    </div>
   );
 };
 
