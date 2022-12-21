@@ -5,9 +5,6 @@ import Footer from './components/Footer'
 const App = () => {
   return (
     <div className="App">
-        <Header />
-        <Tour />
-        <Footer />
     </div>
   );
 }
