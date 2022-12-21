@@ -1,3 +1,18 @@
+main {
+    section {
+        padding: 42px 0;
+        &:first-child {
+            padding-bottom: 0px;
+        }
+        &:nth-child(2) {
+            padding-top: 42px;
+        }
+        &:nth-child(10) {
+            padding-bottom: 0;
+        }
+    }
+}
+
 .burningTours {
     width: 1200px;
     .row {
@@ -96,5 +111,51 @@
         color: #2c2d2e;
         margin-top: 16px;
         width: 210px;
+    }
+}
+
+.online {
+    padding: 65px;
+    background: #FCF9FF;
+    border-radius: 24px;
+    .title {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 120%;
+        color: #2C2D2E;
+        margin-bottom: 55px;
+    }
+    .row {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .item {
+        width: 490px;
+        height: 120px;
+        padding-left: 140px;
+        &:nth-child(1) {
+            background: url('../../img//online/Icons\ 3D\ png.svg') left center no-repeat;
+            margin-bottom: 60px;
+        }
+        &:nth-child(2) {
+            background: url('../../img//online/Icons\ 3D\ png2.svg') left center no-repeat;
+            margin-bottom: 60px;
+        }
+        &:nth-child(3) {
+            background: url('../../img//online/Icons\ 3D\ png3.svg') left center no-repeat;
+            margin-bottom: 60px;
+        }
+        &:nth-child(4) {
+            background: url('../../img//online/Icons\ 3D\ png4.svg') left center no-repeat;
+            margin-bottom: 60px;
+        }
+    }   
+    .text {
+        width: 90%;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 130%;
+        color: #2C2D2E;
     }
 }

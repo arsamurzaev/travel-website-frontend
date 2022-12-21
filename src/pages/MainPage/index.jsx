@@ -9,6 +9,8 @@ import MainReview from "../../components/Main/Review";
 import Slider from "react-slick";
 import CallTour from "../../components/Tour/CallTour";
 import HotelsSlider from "../../components/Main/HotelsSlider";
+import StockSlider from "../../components/Main/StockSlider";
+import Footer from "../../components/Footer";
 
 const MainPage = () => {
   const settings = {
@@ -21,8 +23,10 @@ const MainPage = () => {
 
   return (
     <main>
-      <Navbar />
-      <FilterMenu />
+      <section>
+        <Navbar />
+        <FilterMenu />
+      </section>
       <section>
         <div className="container">
           <div className={styles.burningTours}>
@@ -101,10 +105,61 @@ const MainPage = () => {
         <div className="container">
           <div className={styles.hotel}>
             <h2>Отели без перелета</h2>
-            <HotelsSlider/>
+            <HotelsSlider />
           </div>
         </div>
       </section>
+      <section>
+        <div className="container">
+          <div className={styles.online}>
+            <h2 className={styles.title}>Что вы получите бронируя онлайн</h2>
+            <div className={styles.row}>
+              <div className={styles.item}>
+                <h3 className={styles.label}>Безопасная сделка</h3>
+                <div className={styles.text}>
+                  Все банковские операции и онлайн-платежи на сайте защищены
+                </div>
+              </div>
+              <div className={styles.item}>
+                <h3 className={styles.label}>Скорость и удобство</h3>
+                <div className={styles.text}>
+                  Никаких ожиданий в очередях: можно сравнить предложения
+                  самостоятельно
+                </div>
+              </div>
+              <div className={styles.item}>
+                <h3 className={styles.label}>Выгодная цена</h3>
+                <div className={styles.text}>
+                  Акции и горящие туры отображаются на сайте в реальном времени
+                </div>
+              </div>
+              <div className={styles.item}>
+                <h3 className={styles.label}>Поддержка 24/7</h3>
+                <div className={styles.text}>
+                  Служба поддержки поможет с бронированием тура онлайн и найдёт
+                  решение на ваш вопрос
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div className="container">
+          <div className={styles.stock}>
+            <h2 className={styles.title}></h2>
+            <div className={styles.slider}>
+              <StockSlider />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div className="container">
+          <CallTour />
+        </div>
+      </section>
+      <Footer />
     </main>
   );
 };

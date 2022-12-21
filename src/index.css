@@ -54,7 +54,7 @@ button::-moz-focus-inner {
 }
 a,
 a:visited {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 a:hover {
   text-decoration: none;
