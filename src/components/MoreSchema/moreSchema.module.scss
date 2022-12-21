@@ -1,0 +1,43 @@
+.more{
+    width:22.5%;
+    
+    .text{
+        margin-left: 5px;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .schema{
+        display: flex;
+        
+        div{
+
+            div{
+                
+
+                border: 1px solid ;
+                border-color: rgba(174, 95, 255, 1)
+                rgba(174, 95, 255, 1)
+                rgba(174, 95, 255, 1)
+                rgba(107, 30, 255, 1);
+                background: linear-gradient(0deg, #FCF9FF, #FCF9FF),
+                linear-gradient(92.47deg, #AE5FFF 0%, #AE5FFF 0.01%, #AE5FFF 0.02%, #6B1EFF 106.32%);
+                flex: none;
+                order: 0;
+                flex-grow: 0;
+                margin: 5px ;
+                width: 40px;
+                height: 64px;
+                border-radius: 8px 8px 0px 0px;
+            }
+            span{
+                display: block;
+                text-align: center;
+            }
+        }
+    }
+    .mount{
+        display: flex;
+        justify-content: space-between;
+        margin-left: 5px;
+    }
+}
