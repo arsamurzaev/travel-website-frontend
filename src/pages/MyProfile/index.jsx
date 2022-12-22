@@ -2,6 +2,7 @@ import React from "react";
 import { Link, Route, Routes } from "react-router-dom";
 import Footer from "../../components/Footer";
 import PersonalData from "../../components/personalData/personalData";
+import PersonalFavorites from "../../components/PersonalFavorites/PersonalFavorites";
 import PersonalOrders from "../../components/PersonalOrders/Index";
 import styles from "./myProfile.module.scss";
 
@@ -27,7 +28,7 @@ const MyProfile = () => {
             <Routes>
               <Route path="/" element={<PersonalData />} />
               <Route path="/orders" element={<PersonalOrders/>} />
-              <Route path="/favorites" element='избранное' />
+              <Route path="/favorites" element={<PersonalFavorites/>} />
             </Routes>
           </div>
         </div>
