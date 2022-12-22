@@ -43,6 +43,10 @@ const Tour = () => {
           </div>
         <div className={styles.content}>
           <CartTour />
+          <CartTour />
+          <CartTour />
+          <CartTour />
+          <CartTour />
      
           <div className={styles.call_tour}>
             <CallTour />

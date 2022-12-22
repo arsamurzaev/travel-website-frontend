@@ -13,7 +13,6 @@ const FilterCategory = () => {
     { name: "Полный пансион" },
   ];
 
-  
   return (
     <div className={styles.filter}>
       <div className={styles.name} onClick={() => setActive(!active)}>
