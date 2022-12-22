@@ -1,4 +1,4 @@
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const App = () => {
   return (
@@ -6,5 +6,5 @@ const App = () => {
     </div>
   );
 }
-
 export default App;
+
