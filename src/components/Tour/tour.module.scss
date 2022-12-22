@@ -1,5 +1,34 @@
+
+
+
+
+
 .tour_container{
     width: 100%;
-    
-    
+    display: flex;
+    margin-top: 40px;
+   
+}
+.ul{
+
+    margin: 0;
+
+    >li{
+        list-style: none; 
+    }
+    &:hover{
+        cursor: pointer;
+        color: blue;
+    }
+}
+.content{
+    width: 100%;
+}
+.sort{
+    position: absolute;
+    margin-left: 50px;
+}
+
+.call_tour{
+    margin: 0 auto;
 }
