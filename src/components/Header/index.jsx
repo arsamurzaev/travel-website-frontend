@@ -5,6 +5,7 @@ import phone_svg from "../../img/Header/phone.svg";
 import like_svg from "../../img/Header/like.svg";
 import user_svg from "../../img/Header/user.svg";
 import basket_svg from "../../img/Header/basket.svg";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -29,9 +30,11 @@ const Header = () => {
             <button>
               <img src={basket_svg} alt="" />
             </button>
-            <button>
-              <img src={user_svg} alt="" />
-            </button>
+            <Link to='/profile'>
+              <button>
+                <img src={user_svg} alt="" />
+              </button>
+            </Link>
           </div>
         </div>
       </div>

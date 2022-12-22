@@ -1,0 +1,24 @@
+.row {
+    display: flex;
+    .sidebar{
+        width: 276px;
+        padding: 24px 48px;
+        box-shadow: 0px 2px 4px rgba(14, 31, 53, 0.12);
+        margin-right: 32px;
+    }
+    .list {
+        padding: 0;
+        margin: 0;
+    }
+    .items {
+        padding: 16px 0;
+        a {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            /* identical to box height, or 143% */
+            color: #2C2D2E;
+            
+        }    
+    }
+}
