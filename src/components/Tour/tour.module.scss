@@ -1,7 +1,17 @@
 
 
+
+
+
+.tour_container{
+    width: 100%;
+    display: flex;
+   
+}
 .ul{
+
     margin: 0;
+
     >li{
         list-style: none; 
     }
@@ -10,11 +20,14 @@
         color: blue;
     }
 }
-
-
-
-.tour_container{
+.content{
     width: 100%;
-    
-    
+}
+.sort{
+    position: absolute;
+    margin-left: 50px;
+}
+
+.call_tour{
+    margin: 0 auto;
 }
