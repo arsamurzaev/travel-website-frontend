@@ -98,11 +98,6 @@ const MainPage = () => {
       </section>
       <section>
         <div className="container">
-          <CallTour />
-        </div>
-      </section>
-      <section>
-        <div className="container">
           <div className={styles.hotel}>
             <h2>Отели без перелета</h2>
             <HotelsSlider />
@@ -161,6 +156,7 @@ const MainPage = () => {
       </section>
       <Footer />
     </main>
+    
   );
 };
 

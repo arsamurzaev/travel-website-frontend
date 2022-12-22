@@ -1,0 +1,43 @@
+.row {
+    display: flex;
+    width: 1200px;
+    select {
+        border: none;
+        width: 100%;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: #2c2d2e;
+    }
+    input {
+        border: none;
+        width: 100%;
+    }
+    .item {
+        width: 216px;
+        border: 1px solid rgba(0, 16, 61, 0.12);
+        padding: 8px 16px;
+        border-right: none;
+        &:first-child {
+            border-radius: 8px 0px 0px 8px;
+        }
+        p {
+            margin-bottom: 4px;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 16px;
+            color: #919399;
+        }
+    }
+    button {
+        width: 125px;
+        height: 59px;
+        background: linear-gradient(92.47deg, #ae5fff 0%, #ae5fff 0.01%, #ae5fff 0.02%, #6b1eff 106.32%);
+        border-radius: 0px 8px 8px 0px;
+        border: none;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        color: white;
+    }
+}

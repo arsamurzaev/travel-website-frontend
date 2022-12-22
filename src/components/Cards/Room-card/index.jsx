@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './RoomCard.module.scss';
 import img from '../../../Images/Rectangle75.png'
 
-export default function index() {
+export default function RoomCard() {
   return (
     <>
       <div className={styles.card}>

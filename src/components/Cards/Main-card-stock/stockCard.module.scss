@@ -1,0 +1,27 @@
+.card {
+    background: #ffffff;
+    border: 1px solid rgba(0, 16, 61, 0.12);
+    border-radius: 24px;
+    width: 387px;
+    text-decoration: none !important;
+    
+    .info {
+        padding: 24px 24px 32px;
+    }
+    .date {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 120%;
+        color: #919399;
+        margin-bottom: 12px;
+    }
+    .title {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 130%;
+        color: #2c2d2e;
+    }
+    .img img {
+        width: 100%;
+    }
+}

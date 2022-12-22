@@ -1,17 +1,13 @@
 import React from "react";
 import styles from "./HotelCard.module.scss";
 import Slider from "./Slider";
-import 'bootstrap/dist/css/bootstrap.min.css';
-
-
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const HotelCard = () => {
-
   return (
-
     <div className={styles.card}>
       <div className={styles.image}>
-    <Slider/>
+        <Slider />
         <div className={styles.buttonLike}>
           <svg
             width="22"
@@ -286,11 +282,10 @@ const HotelCard = () => {
                   fill="#2C2D2E"
                 />
               </svg>
-              
             </div>
-            <p>•  12 окт</p>
-            <p>•  2 взрослых</p>
-            <p>•  7 ночей</p>
+            <p>• 12 окт</p>
+            <p>• 2 взрослых</p>
+            <p>• 7 ночей</p>
           </div>
           <button>от 80 665 ₽</button>
         </div>
