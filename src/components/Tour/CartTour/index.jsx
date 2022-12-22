@@ -1,6 +1,8 @@
 import React from "react";
 import styles from "./cartTour.module.scss";
+
 const CartTour = () => {
+
   return (
     <div className={styles.cart__container}>
       <div className={styles.cart__items}>
