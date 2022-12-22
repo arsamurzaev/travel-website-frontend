@@ -1,0 +1,161 @@
+main {
+    section {
+        padding: 42px 0;
+        &:first-child {
+            padding-bottom: 0px;
+        }
+        &:nth-child(2) {
+            padding-top: 42px;
+        }
+        &:nth-child(9) {
+            padding-bottom: 0;
+        }
+    }
+}
+
+.burningTours {
+    width: 1200px;
+    .row {
+        display: flex;
+        justify-content: space-between;
+        .carousel {
+            width: 787px;
+            height: 450px;
+        }
+        .item {
+            width: 381px;
+            height: 209px;
+            padding: 32px;
+            background: #fcf9ff;
+            box-shadow: 0px 2px 4px rgba(14, 31, 53, 0.12);
+            border-radius: 24px;
+            overflow: hidden;
+            position: relative;
+            background: url("../../img/unggggggggggtitled\ 1.png") right top no-repeat;
+            &:last-child {
+                background: url("../../img/untillltled\ 1.png") right top no-repeat;
+            }
+            &::after {
+                width: 200px;
+                height: 200px;
+                content: "";
+                position: absolute;
+                right: -51px;
+                top: -51px;
+                background: linear-gradient(
+                    92.47deg,
+                    rgba(174, 95, 255, 0.1) 0%,
+                    rgba(174, 95, 255, 0.1) 0.01%,
+                    rgba(174, 95, 255, 0.1) 0.02%,
+                    rgba(107, 30, 255, 0.1) 106.32%
+                );
+                border-radius: 100%;
+            }
+
+            &:first-child {
+                margin-bottom: 32px;
+            }
+            .title {
+                font-weight: 600;
+                font-size: 25px;
+                line-height: 120%;
+                color: #2c2d2e;
+                width: 200px;
+                margin-bottom: 12px;
+            }
+            .text {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 130%;
+                color: #2c2d2e;
+                width: 200px;
+            }
+        }
+    }
+}
+
+.recommendations {
+    h1 {
+        margin-bottom: 40px;
+    }
+    .row {
+        display: flex;
+        justify-content: space-between;
+    }
+    .item {
+        width: 30%;
+        filter: drop-shadow(0px 2px 4px rgba(14, 31, 53, 0.12));
+        background: #fcf9ff;
+        border-radius: 24px;
+        padding: 32px;
+        &:nth-child(1) {
+            background: url("../../img/recomendation/unffffffftitled\ 1.svg") right center no-repeat, #fcf9ff;
+        }
+        &:nth-child(2) {
+            background: url("../../img/recomendation/untisssssstled\ 2.png") right center no-repeat, #fcf9ff;
+        }
+        &:nth-child(3) {
+            background: url("../../img/recomendation/untisssssstled\ 3.png") right center no-repeat, #fcf9ff;
+        }
+    }
+    .title {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 120%;
+        color: #2c2d2e;
+    }
+    .text {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 130%;
+        color: #2c2d2e;
+        margin-top: 16px;
+        width: 210px;
+    }
+}
+
+.online {
+    padding: 65px;
+    background: #FCF9FF;
+    border-radius: 24px;
+    .title {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 120%;
+        color: #2C2D2E;
+        margin-bottom: 55px;
+    }
+    .row {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .item {
+        width: 490px;
+        height: 120px;
+        padding-left: 140px;
+        &:nth-child(1) {
+            background: url('../../img//online/Icons\ 3D\ png.svg') left center no-repeat;
+            margin-bottom: 60px;
+        }
+        &:nth-child(2) {
+            background: url('../../img//online/Icons\ 3D\ png2.svg') left center no-repeat;
+            margin-bottom: 60px;
+        }
+        &:nth-child(3) {
+            background: url('../../img//online/Icons\ 3D\ png3.svg') left center no-repeat;
+            margin-bottom: 60px;
+        }
+        &:nth-child(4) {
+            background: url('../../img//online/Icons\ 3D\ png4.svg') left center no-repeat;
+            margin-bottom: 60px;
+        }
+    }   
+    .text {
+        width: 90%;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 130%;
+        color: #2C2D2E;
+    }
+}

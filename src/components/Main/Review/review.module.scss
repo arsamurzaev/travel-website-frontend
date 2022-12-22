@@ -1,0 +1,82 @@
+.review {
+    .row {
+        display: flex;
+        border: 0.5px solid rgba(0, 16, 61, 0.12);
+        box-shadow: 0px 2px 4px rgba(14, 31, 53, 0.12);
+        border-radius: 24px;
+    }
+    .info {
+        padding: 50px 140px 0px 50px;
+        width: 50%;
+        border-right: 1px solid #d9d9d9;
+        .avatar {
+            display: flex;
+            align-items: center;
+        }
+        .userInfo {
+            margin-left: 16px;
+        }
+        .fullname {
+            font-weight: 600;
+            font-size: 25px;
+            line-height: 120%;
+            color: #2c2d2e;
+        }
+        .home {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 130%;
+            color: #2c2d2e;
+        }
+        .date {
+            margin: 20px 0 33px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 130%;
+            color: #919399;
+        }
+        .item {
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 130%;
+            color: #2C2D2E;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            &:first-child {
+                margin-bottom: 28px;
+            }
+            span {
+                display: inline-block;
+                background: #6B1EFF;
+                border-radius: 100px;
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 130%;
+                color: #FCF9FF;
+                padding: 9px 26px;
+            }
+        }
+    }
+    .comment {
+        width: 50%;
+        padding: 62px 108px 62px 92px;
+        & > p {
+            height: 235px;
+            overflow: hidden;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 130%;
+            color: #2c2d2e;
+            margin-bottom: 16px;
+        }
+        button {
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 24px;
+            color: #2c2d2e;
+            background: transparent;
+            border: none;
+        }
+    }
+}
