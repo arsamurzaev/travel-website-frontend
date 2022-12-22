@@ -3,7 +3,7 @@ import { useState } from 'react';
 import styles from "./callTour.module.scss"
 const CallTour = (value) => {
     const  listSort = [{raiting: "Популярности"}, {price:"Цена"}] 
-    const sortName = listSort[value].name
+    // const sortName = listSort[value].name
     return (
         <div className={styles.container}>
             <div className={styles.content}>

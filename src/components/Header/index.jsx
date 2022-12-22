@@ -12,7 +12,9 @@ const Header = () => {
     <header>
       <div className={styles.header}>
         <div className={styles.logo}>
-          <img src={logo_svg} alt="" />
+          <Link to='/'>
+            <img src={logo_svg} alt="" />
+          </Link>
           <button>Подобрать тур</button>
         </div>
         <div className={styles.infa}>
@@ -30,7 +32,7 @@ const Header = () => {
             <button>
               <img src={basket_svg} alt="" />
             </button>
-            <Link to='/profile'>
+            <Link to="/profile">
               <button>
                 <img src={user_svg} alt="" />
               </button>
