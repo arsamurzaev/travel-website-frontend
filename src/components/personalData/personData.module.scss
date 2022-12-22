@@ -1,26 +1,25 @@
-.container{   
-    
-    h1{
+.container {
+    h1 {
         margin-bottom: 30px;
-        font-family: 'Inter';
+        font-family: "Inter";
         font-style: normal;
         font-weight: 600;
         font-size: 25px;
         line-height: 120%;
-        color: #2C2D2E;
+        color: #2c2d2e;
     }
-    h3{
-        font-family: 'Inter';
+    h3 {
+        font-family: "Inter";
         font-style: normal;
         font-weight: 600;
         font-size: 18px;
         line-height: 130%;
-        color: #2C2D2E;
+        color: #2c2d2e;
         flex: none;
         order: 0;
         flex-grow: 0;
     }
-}
+
 .content{ 
     max-width: 900px;
     margin: auto;
@@ -323,8 +322,262 @@ button{
         height: 58px;
         left: 428px;
         top: 1022px;
-        background: #F5F5F7;
+        background: #f5f5f7;
         border-radius: 16px;
         border: none;
         margin-bottom: 30px;
+    }
+}
+.content {
+    max-width: 900px;
+    margin: auto;
+    .header_txt {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+        margin-bottom: 40px;
+        > p {
+            font-family: "Inter";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 130%;
+            color: #919399;
+            flex: none;
+            order: 0;
+            flex-grow: 0;
+            > span {
+                font-family: "Inter";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 130%;
+                color: #1166ee;
+                flex: none;
+                order: 1;
+                flex-grow: 0;
+            }
+        }
+    }
+}
+
+.name {
+    display: flex;
+    margin-top: 40px;
+    .firstName_input {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+        color: #919399;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        > input {
+            padding: 10px;
+            width: 284px;
+            height: 52px;
+            background: #ffffff;
+            border: 1px solid rgba(0, 16, 61, 0.12);
+            border-radius: 8px;
+            flex: none;
+            order: 1;
+            align-self: stretch;
+            flex-grow: 0;
+            margin-right: 20px;
+        }
+    }
+    .secondName_input {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+        color: #919399;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        > input {
+            padding: 10px;
+            width: 284px;
+            height: 52px;
+            background: #ffffff;
+            border: 1px solid rgba(0, 16, 61, 0.12);
+            border-radius: 8px;
+            flex: none;
+            order: 1;
+            align-self: stretch;
+            flex-grow: 0;
+            margin-right: 20px;
+        }
+    }
+    .lastName_input {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+        color: #919399;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        > input {
+            padding: 10px;
+            width: 284px;
+            height: 52px;
+            background: #ffffff;
+            border: 1px solid rgba(0, 16, 61, 0.12);
+            border-radius: 8px;
+            flex: none;
+            order: 1;
+            align-self: stretch;
+            flex-grow: 0;
+        }
+    }
+}
+
+.inputs_contact {
+    display: flex;
+    justify-content: space-between;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #919399;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin-top: 35px;
+    .mail {
+        > input {
+            padding: 10px;
+            width: 436px;
+            height: 52px;
+            background: #ffffff;
+            border: 1px solid rgba(0, 16, 61, 0.12);
+            border-radius: 8px;
+            flex: none;
+            order: 1;
+            align-self: stretch;
+            flex-grow: 0;
+            // margin-right: 26px;
+        }
+    }
+
+    .number {
+        > input {
+            width: 288px;
+            height: 52px;
+            background: #ffffff;
+            border: 1px solid rgba(0, 16, 61, 0.12);
+            border-radius: 8px;
+            flex: none;
+            order: 1;
+            align-self: stretch;
+            flex-grow: 1;
+        }
+    }
+}
+.b_of_d {
+    display: flex;
+    margin-top: 20px;
+    .birdOfDate {
+        > h3 {
+            font-family: "Inter";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 15px;
+            color: #919399;
+            flex: none;
+            order: 0;
+            flex-grow: 0;
+        }
+        > input {
+            width: 436px;
+            height: 52px;
+            padding: 15px;
+            font-size: 18px;
+            border: 1px solid rgba(0, 16, 61, 0.12);
+            border-radius: 8px;
+            flex: none;
+            order: 1;
+            align-self: stretch;
+            flex-grow: 0;
+        }
+    }
+    .gender {
+        margin-left: 20px;
+        > p {
+            font-family: "Inter";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 15px;
+            color: #2c2d2e;
+            flex: none;
+            order: 0;
+            flex-grow: 0;
+        }
+    }
+    select {
+        padding: 10px;
+        width: 436px;
+        height: 52px;
+        background: #ffffff;
+        border: 1px solid rgba(0, 16, 61, 0.12);
+        border-radius: 8px;
+        flex: none;
+        order: 1;
+        align-self: stretch;
+        flex-grow: 0;
+    }
+}
+
+.documents {
+    margin-top: 150px;
+    .content_documents {
+        display: grid;
+        gap: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        select {
+            width: 284px;
+            height: 52px;
+            background: #ffffff;
+            border: 1px solid rgba(0, 16, 61, 0.12);
+            border-radius: 8px;
+            flex: none;
+            order: 1;
+            align-self: stretch;
+            flex-grow: 0;
+            padding: 10px;
+        }
+        input {
+            width: 284px;
+            height: 52px;
+            background: #ffffff;
+            border: 1px solid rgba(0, 16, 61, 0.12);
+            border-radius: 8px;
+            flex: none;
+            order: 1;
+            align-self: stretch;
+            flex-grow: 0;
+            padding: 10px;
+            font-size: 18px;
+        }
+        h4 {
+            font-family: "Inter";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 130%;
+            color: #2c2d2e;
+            flex: none;
+            order: 0;
+            flex-grow: 0;
+        }
+    }
 }

@@ -1,4 +1,5 @@
 import React from 'react';
+
 import styles from './Sorting.module.scss';
 import svg from '../../Images/Vector.svg'
 export default function index() {
