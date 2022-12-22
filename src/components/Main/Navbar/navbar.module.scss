@@ -1,0 +1,88 @@
+.list {
+    display: flex;
+    width: 496px;
+    margin: 0;
+    justify-content: space-between;
+    align-items: center;
+    .item {
+        &::after {
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 2px;
+            background: transparent;
+            bottom: 0;
+            left: 0px;
+            border-radius: 100px;
+        }
+        &:focus {
+            background: linear-gradient(92.47deg, #ae5fff 0%, #ae5fff 0.01%, #ae5fff 0.02%, #6b1eff 106.32%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            &::after {
+                background: linear-gradient(92.47deg, #ae5fff 0%, #ae5fff 0.01%, #ae5fff 0.02%, #6b1eff 106.32%);
+            }
+        }
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 130%;
+        padding: 0 0 8px 28px;
+        position: relative;
+        &::before {
+            position: absolute;
+            content: "";
+            width: 24px;
+            height: 24px;
+            top: 0;
+            left: 0px;
+        }
+        &:nth-child(1) {
+            &::before {
+                background: url("../../../img/Navbar/Fill.svg") center no-repeat;
+            }
+            &:hover::before {
+                background: url("../../../img/Navbar/hover/Fill.svg") center no-repeat;
+            }
+        }
+        &:nth-child(2) {
+            &::before {
+                background: url("../../../img/Navbar/Bed.svg") center no-repeat;
+            }
+            &:hover::before {
+                background: url("../../../img/Navbar/hover/Bed.svg") center no-repeat;
+            }
+        }
+        &:nth-child(3) {
+            &::before {
+                background: url("../../../img/Navbar/Avial.svg") center no-repeat;
+            }
+            &:hover::before {
+                background: url("../../../img/Navbar/hover/Avial.svg") center no-repeat;
+            }
+        }
+        &:nth-child(4) {
+            &::before {
+                background: url("../../../img/Navbar/Poezd.svg") center no-repeat;
+            }
+            &:hover::before {
+                background: url("../../../img/Navbar/hover/Poezd.svg") center no-repeat;
+            }
+        }
+        &:nth-child(5) {
+            &::before {
+                background: url("../../../img/Navbar/Car.svg") center no-repeat;
+            }
+            &:hover::before {
+                background: url("../../../img/Navbar/hover/Car.svg") center no-repeat;
+            }
+        }
+        &:hover {
+            background: linear-gradient(92.47deg, #ae5fff 0%, #ae5fff 0.01%, #ae5fff 0.02%, #6b1eff 106.32%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+        }
+    }
+}
