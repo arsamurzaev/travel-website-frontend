@@ -1,14 +1,13 @@
-
 import 'bootstrap/dist/css/bootstrap.min.css';
-import PersonalData from './components/personalData/personalData';
+import Registration from './components/Auth/RegistrationAuth';
 
 
 const App = () => {
   return (
     <div className="App">
-      
+      <Registration />
     </div>
   );
 }
 export default App;
-//todo
+
