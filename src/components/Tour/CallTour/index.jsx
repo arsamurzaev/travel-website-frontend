@@ -1,4 +1,5 @@
 import React from 'react';
+
 import styles from "./callTour.module.scss"
 const CallTour = () => {
     return (
@@ -7,8 +8,8 @@ const CallTour = () => {
                 <div className={styles.content_container}>
                     <h1>Сложно сделать выбор?</h1>
                     <p>Подберём для вас лучший тур за несколько минут</p>
-                   
                     <div className={styles.call__input}>
+                        
                     <div className={styles.call__text}>
                         <span>Номер телефона</span>
                         <p>+7 928 695 30 59</p>

@@ -1,0 +1,88 @@
+.card {
+    border-radius: 24px;
+    box-shadow: 0 0 0.6px 0;
+    margin: auto;
+    width: 276px;
+    height: 370px;
+    position: relative;
+    right: 600px;
+
+    .heart {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background: #fff;
+        color: #000;
+        font-size: 50px;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        border-radius: 50%;
+        align-items: center;
+        z-index: 3;
+    }
+
+    img {
+        border-radius: 24px;
+    }
+
+    .dosc {
+        .info {
+            margin: 10px 10px 50px 10px;
+
+            .city {
+                background: linear-gradient(92.47deg, #ae5fff 0%, #ae5fff 0.01%, #ae5fff 0.02%, #6b1eff 106.32%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 16px;
+                padding-left: 20px;
+                position: relative;
+                &::before {
+                    background: url("../../../img/HotelsSlider/Small.svg");
+                    width: 16px;
+                    height: 16px;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    content: "";
+                }
+            }
+            .nameHome {
+                font-family: "Inter", sans-serif;
+                font-size: 18px;
+                font-weight: 600;
+                margin: 10px 0;
+            }
+            .nomer {
+                font-size: 12px;
+                padding-left: 20px;
+                position: relative;
+                position: relative;
+                &::before {
+                    background: url("../../../img/HotelsSlider/Small-avia.svg");
+                    width: 16px;
+                    height: 16px;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    content: "";
+                }
+            }
+        }
+
+        .btn {
+            width: 80%;
+            text-align: center;
+            margin: 0 10%;
+            border: none;
+            border-radius: 10px;
+            height: 33px;
+            background: linear-gradient(92.47deg, #ae5fff 0%, #ae5fff 0.01%, #ae5fff 0.02%, #6b1eff 106.32%);
+            color: white;
+            font-weight: 500;
+        }
+    }
+}

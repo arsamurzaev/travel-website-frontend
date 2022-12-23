@@ -1,98 +1,110 @@
-.container{
+.container {
     margin-top: 40px;
-    .content{
+
+    .content {
         display: flex;
-       
+        margin: 0 auto;
         width: 1200px;
         height: 350px;
         background: hsl(274, 100%, 97%);
         border-radius: 24px;
-        >img{height: 387px;
+
+        > img {
+            height: 387px;
             position: relative;
             top: -38px;
         }
-        .content_container{
-            margin-left: 60px;  
-            >h1{
-                font-family: 'Inter';
+        .content_container {
+            margin-left: 60px;
+            > h1 {
+                font-family: "Inter";
                 font-style: normal;
                 font-weight: 700;
                 font-size: 40px;
                 line-height: 120%;
-                color: #2C2D2E;
+                color: #2c2d2e;
+                margin-top: 50px;
             }
-            >p{
-                font-family: 'Inter';
+            > p {
+                font-family: "Inter";
                 font-style: normal;
                 font-weight: 400;
                 font-size: 16px;
                 line-height: 130%;
-                color: #2C2D2E;
+                color: #2c2d2e;
             }
         }
-        .call__input{
-           display: flex;
-           justify-content: space-between;
+        .call__input {
+            display: flex;
+            justify-content: space-between;
             width: 500px;
             height: 60px;
-            background: #FFFFFF;
+            background: #ffffff;
             border: 1px solid rgba(0, 16, 61, 0.12);
             border-radius: 100px;
-            .call__text{
-                padding: 10px;
-                margin-left: 10px;
-                >span{
-                    font-family: 'Inter';
+            .call__text {
+                padding: 11px 32px;
+                > span {
+                    font-family: "Inter";
                     font-style: normal;
                     font-weight: 400;
                     font-size: 12px;
                     line-height: 16px;
                     color: #919399;
                 }
-                >p{
-                    margin: 5px 0;
-                    padding: 0;
-                    font-family: 'Inter';
+                > p {
+                    margin: 4px 0 0 0;
+                    font-family: "Inter";
                     font-style: normal;
                     font-weight: 400;
                     font-size: 16px;
                     line-height: 130%;
-                    color: #2C2D2E;
+                    color: #2c2d2e;
                 }
             }
-            .button{
-                
-                >button{
-                    height: 59px;
+            .button {
+                > button {
+                    height: 58px;
                     width: 160px;
                     border: none;
-                    background: linear-gradient(92.47deg, #AE5FFF 0%, #AE5FFF 0.01%, #AE5FFF 0.02%, #6B1EFF 106.32%);
+                    background: linear-gradient(92.47deg, #ae5fff 0%, #ae5fff 0.01%, #ae5fff 0.02%, #6b1eff 106.32%);
                     border-radius: 0px 100px 100px 0px;
-                    font-family: 'Inter';
+                    font-family: "Inter";
                     font-style: normal;
                     font-weight: 600;
-                    font-size: 15px;
+                    font-size: 18 px;
                     line-height: 100%;
                     text-align: center;
                     color: #FFFFFF;
+                    &:hover{
+                        color: #AE5FFF ; 
+                        background: #fff;
+                        border: 2px solid #AE5FFF;
+                    }
                 }
-               
             }
         }
     }
 }
 
-.call__checkbox{
+.call__checkbox {
     display: flex;
     margin-top: 10px;
-
-    >span{
-
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 17px;
-        color: #919399;
+    > input {
+        box-sizing: border-box;
+        width: 24px;
+        height: 24px;
+        border: 1px solid rgba(0, 16, 61, 0.12);
+        border-radius: 8px;
+        margin-left: 15px;
+        margin-right: 10px;
+        > span {
+            font-family: "Inter";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            color: #919399;
+        }
     }
 }
