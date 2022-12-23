@@ -1,0 +1,24 @@
+.button {
+    width: 375px;
+    height: 58px;
+    margin-top: 25px;
+    border: none;
+    color: #FFFFFF;
+    font-weight: 600;
+    /* Основные цвета/Color-primary */
+
+    background: linear-gradient(92.47deg, #AE5FFF 0%, #AE5FFF 0.01%, #AE5FFF 0.02%, #6B1EFF 106.32%);
+    border-radius: 16px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+
+}
+
+.button_center {
+    display: flex;
+    justify-content: center;
+}
