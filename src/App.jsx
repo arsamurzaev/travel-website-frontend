@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import MainPage from "./pages/MainPage";
 import { Route, Routes } from "react-router";
 import MyProfile from "./pages/MyProfile/index";
-import ToursPage from "./pages/ToursPage";
+import ToursPage from "./pages/ToursPage"
 
 const App = () => {
   return (

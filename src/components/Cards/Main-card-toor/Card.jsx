@@ -1,13 +1,29 @@
 import React from "react";
 import styles from "./CardMain.module.scss";
+// import { useDispatch } from 'react-redux'
 import img from "../../../img/Card/Rectangle 9.png";
 import { Carousel } from "react-bootstrap";
 import { Link } from "react-router-dom";
+// import { fetchTour } from "../../../app/features/tourSlice";
 
-const Card = () => {
+const Card = ({creatorTour,
+  hotelId,
+  name,
+  rooms,
+  description,
+  route,
+  info,
+  food,
+  restType,
+  beach,
+  flight,
+  price}) => {
+ console.log(rooms);
+    
   return (
     <>
       <div className={styles.card}>
+       
         <Link>
           <Carousel>
             <Carousel.Item>
@@ -30,14 +46,14 @@ const Card = () => {
 
           <div className={styles.dosc}>
             <div className={styles.info}>
-              <div className={styles.city}>Абхазия, Пицунда</div>
-              <div className={styles.nameHome}>"Эдем", гостевой дом</div>
+              <div className={styles.city}>{route[0].split(",")}</div>
+              <div className={styles.nameHome}>{name}</div>
               <div className={styles.nomer}>
                 Bed & Breakfast | Двухместный номер
               </div>
             </div>
 
-            <button className={styles.btn}>от 61 028 ₽ </button>
+            <button className={styles.btn}>от {price} ₽ </button>
           </div>
         </Link>
       </div>
