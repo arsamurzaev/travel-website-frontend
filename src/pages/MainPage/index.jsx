@@ -11,7 +11,7 @@ import CallTour from "../../components/Tour/CallTour";
 import HotelsSlider from "../../components/Main/HotelsSlider";
 import StockSlider from "../../components/Main/StockSlider";
 import Footer from "../../components/Footer";
-import { Routes } from "react-router-dom";
+
 
 const MainPage = () => {
   const settings = {
