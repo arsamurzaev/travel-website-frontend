@@ -6,11 +6,12 @@ const initialState = {
     loading: false,
     error: null
 }
-export const createTour = createAsyncThunk("create/tour", async (data, thunkAPI )=>{
+export const addTour = createAsyncThunk("create/tour", async (data, thunkAPI )=>{
     try {
-        
+        const res = await fetch('')
+        return res
     } catch (error) {
-        
+        return thunkAPI.rejectWithValue(error)
     }
 })
 
@@ -33,8 +34,20 @@ const tourSlice = createSlice({
     reducers: {},
     extraReducers: (builder) =>{
         builder
+
+//GET TOUR ================================================================
         .addCase(fetchTour.fulfilled, (state, actions)=>{
             state.tours = actions.payload
+            state.loading = false
+            state.error = null
+        })
+        .addCase(fetchTour.rejected, (state, actions)=>{
+            state.error = actions.payload
+            state.loading = false
+        })
+        .addCase(fetchTour.pending, (state, actions)=>{
+            state.loading = true
+            state.error = false
         })
     }
 })

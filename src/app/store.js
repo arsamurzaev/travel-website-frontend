@@ -5,6 +5,7 @@ import userDataSlice from "./features/userDataSlice"
 export const store = configureStore({
     reducer:{
         userData: userDataSlice,
-        tours: tourSlice
+        tours: tourSlice,
+        
     }
 })

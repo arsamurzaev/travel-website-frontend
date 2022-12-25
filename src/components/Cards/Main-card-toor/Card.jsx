@@ -5,21 +5,13 @@ import img from "../../../img/Card/Rectangle 9.png";
 import { Carousel } from "react-bootstrap";
 import { Link } from "react-router-dom";
 // import { fetchTour } from "../../../app/features/tourSlice";
+import {ReactComponent as Heart} from "../../../img/Card/Vector.svg";
 
-const Card = ({creatorTour,
-  hotelId,
-  name,
-  rooms,
-  description,
-  route,
-  info,
-  food,
-  restType,
-  beach,
-  flight,
-  price}) => {
- console.log(rooms);
-    
+
+const Card = ({name, rooms, route,price}) => {
+  const handleAddTourBasket = () =>{
+    alert(123)
+  }
   return (
     <>
       <div className={styles.card}>
@@ -42,7 +34,10 @@ const Card = ({creatorTour,
               <img className="d-block w-100" src={img} alt="none" />
             </Carousel.Item>
           </Carousel>
-          <button className={styles.heart}></button>
+
+          <button className={styles.heart}>
+            <Heart className={styles.imgS}/>
+          </button>
 
           <div className={styles.dosc}>
             <div className={styles.info}>
@@ -53,7 +48,7 @@ const Card = ({creatorTour,
               </div>
             </div>
 
-            <button className={styles.btn}>от {price} ₽ </button>
+            <button onClick={()=>handleAddTourBasket()} className={styles.btn}>от {price} ₽ </button>
           </div>
         </Link>
       </div>
