@@ -1,16 +1,20 @@
 import React from 'react';
-import { useState } from 'react';
+
 import styles from "./callTour.module.scss"
+<<<<<<< HEAD
 const CallTour = (value) => {
     const  listSort = [{raiting: "Популярности"}, {price:"Цена"}] 
+=======
+const CallTour = () => {
+>>>>>>> 1b075e6d9b005cb88fc215b89f844895697d6546
     return (
         <div className={styles.container}>
             <div className={styles.content}>
                 <div className={styles.content_container}>
                     <h1>Сложно сделать выбор?</h1>
                     <p>Подберём для вас лучший тур за несколько минут</p>
-                   
                     <div className={styles.call__input}>
+                        
                     <div className={styles.call__text}>
                         <span>Номер телефона</span>
                         <p>+7 928 695 30 59</p>

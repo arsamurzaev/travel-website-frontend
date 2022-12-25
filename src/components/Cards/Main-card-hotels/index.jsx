@@ -3,8 +3,12 @@ import styles from "./hotelsCard.module.scss";
 import img from "../../../img/Card/Rectangle 9.png";
 import { Carousel } from "react-bootstrap";
 import { Link } from "react-router-dom";
+<<<<<<< HEAD
 import { motion } from 'framer-motion';
 
+=======
+import {ReactComponent as Heart} from "../../../img/Card/Vector.svg";
+>>>>>>> 1b075e6d9b005cb88fc215b89f844895697d6546
 
 
 const HotelCard = () => {
@@ -29,7 +33,7 @@ const HotelCard = () => {
               <img className="d-block w-100" src={img} alt="none" />
             </Carousel.Item>
           </Carousel>
-          <button className={styles.heart}></button>
+          <button className={styles.heart}><Heart className={styles.imgS}/></button>
 
           <div className={styles.dosc}>
             <div className={styles.info}>
