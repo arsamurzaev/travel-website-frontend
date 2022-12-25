@@ -1,10 +1,9 @@
+import Header from './components/Header'
 import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/css/bootstrap.min.css";
-import Header from "./components/Header";
 import MainPage from "./pages/MainPage";
 import { Route, Routes } from "react-router";
 import MyProfile from "./pages/MyProfile/index";
-import ToursPage from "./pages/ToursPage";
+import ToursPage from "./pages/ToursPage"
 
 const App = () => {
   return (

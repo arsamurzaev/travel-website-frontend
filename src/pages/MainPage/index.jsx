@@ -141,9 +141,9 @@ const MainPage = () => {
         </div>
       </section>
       <section>
-        <div className="container">
+        <div className={styles.container}>{/* Пустой тег */}
           <div className={styles.stock}>
-            <h2 className={styles.title}></h2>
+            {/* <h2 className={styles.title}></h2> */}
             <div className={styles.slider}>
               <StockSlider />
             </div>

@@ -1,8 +1,10 @@
+import { useSelector } from "react-redux";
 import Slider from "react-slick";
 import Card from "../../Cards/Main-card-toor/Card";
-import styles from "./slider.module.scss";
+// import styles from "./slider.module.scss";
 
 const TourSlider = () => {
+  const tours = useSelector((state)=>state.tours.tours)
   const settings = {
     dots: true,
     infinite: true,
@@ -16,13 +18,25 @@ const TourSlider = () => {
   return (
     <div>
       <Slider {...settings}>
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
+        {tours?.map((item)=>{
+          return(
+           <Card 
+           id = {item._id}
+           creatorTour = {item.creatorTour}
+           hotelId = {item.hotelId}
+           name = {item.name}
+           rooms = {item.rooms}
+           description = {item.description}
+           route = {item.route.MainPointsOfVisit}
+           info = {item.info}
+           food = {item.food}
+           restType = {item.restType}
+           beach = {item.beach}
+           flight = {item.flight}
+           price = {item.info.price}
+           />
+          )
+        })}       
       </Slider>
     </div>
   );
