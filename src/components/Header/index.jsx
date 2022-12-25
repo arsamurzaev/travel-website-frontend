@@ -7,6 +7,12 @@ import user_svg from "../../img/Header/user.svg";
 import basket_svg from "../../img/Header/basket.svg";
 import { Link } from "react-router-dom";
 
+import { motion } from 'framer-motion';
+
+import { useDispatch } from "react-redux";
+import { fetchTour } from "../../app/features/tourSlice";
+
+
 const Header = () => {
   const dispatch = useDispatch()
   useEffect(()=>{
@@ -16,8 +22,20 @@ const Header = () => {
     <header>
       <div className={styles.header}>
         <div className={styles.logo}>
-          <img src={logo_svg} alt="" />
-          <button>Подобрать тур</button>
+
+          <Link to='/'>
+            <img src={logo_svg} alt="" />
+          </Link>
+          <motion.button
+          initial={{ opacity: 0.9 }}
+          whileHover={{
+            scale: 1.1,
+            // transition: { duration: 0.5 },
+          }}
+          whileTap={{ scale: 0.9 }}
+          whileInView={{ opacity: 1 }} 
+          >Подобрать тур</motion.button>
+
         </div>
         <div className={styles.infa}>
           <div className={styles.help}>

@@ -1,12 +1,10 @@
 import React from 'react';
 
 import styles from "./callTour.module.scss"
-<<<<<<< HEAD
+
 const CallTour = (value) => {
     const  listSort = [{raiting: "Популярности"}, {price:"Цена"}] 
-=======
-const CallTour = () => {
->>>>>>> 1b075e6d9b005cb88fc215b89f844895697d6546
+
     return (
         <div className={styles.container}>
             <div className={styles.content}>
