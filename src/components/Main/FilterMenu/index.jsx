@@ -1,4 +1,8 @@
 import styles from "./filtermenu.module.scss";
+import { useState } from "react";
+import { motion, Variants } from "framer-motion";
+
+
 
 const FilterMenu = () => {
   return (

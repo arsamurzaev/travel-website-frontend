@@ -3,6 +3,7 @@ import styles from "./CardMain.module.scss";
 import img from "../../../img/Card/Rectangle 9.png";
 import { Carousel } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion"
 
 const Card = () => {
   return (
@@ -37,7 +38,15 @@ const Card = () => {
               </div>
             </div>
 
-            <button className={styles.btn}>от 61 028 ₽ </button>
+            <motion.button
+            initial={{ opacity: 0.9 }}
+            whileHover={{
+              scale: 1.1,
+              // transition: { duration: 0.5 },
+            }}
+            whileTap={{ scale: 0.9 }}
+            whileInView={{ opacity: 1 }}
+            className={styles.btn}>от 61 028 ₽ </motion.button>
           </div>
         </Link>
       </div>
