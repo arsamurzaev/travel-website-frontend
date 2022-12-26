@@ -15,10 +15,10 @@ const App = () => {
         <Route path="/tours" element={<ToursPage/>}/>
         <Route path="/profile/*" element={<MyProfile/>}/>
 
-        <Route path="/authreg/*" element={<Registration />}/>
+        <Route path="/auth/*" element={<Registration />}/>
       </Routes>
     </div>
   );
 };
-// 
+
 export default App;
