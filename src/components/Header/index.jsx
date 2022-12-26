@@ -8,9 +8,10 @@ import basket_svg from "../../img/Header/basket.svg";
 import { Link } from "react-router-dom";
 import Registration from "../Auth/RegistrationAuth";
 import { motion } from "framer-motion";
+import { useSelector } from "react-redux";
 
 const Header = () => {
-  const user = '';
+  const user = useSelector(state => state.authSlice)
 
   return (
     <header>
@@ -48,7 +49,7 @@ const Header = () => {
                 <img src={basket_svg} alt="" />
               </Link>
             </button>
-            <Link to={user ? "/profile" : "/registration"}>
+            <Link to={user ? "/profile" : "/auth/*"}>
               <button>{user ? <img src={user_svg} alt="" /> : "Войти"}</button>
             </Link>
           </div>

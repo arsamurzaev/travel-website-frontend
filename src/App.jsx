@@ -3,9 +3,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import MainPage from "./pages/MainPage";
 import { Route, Routes } from "react-router";
 import MyProfile from "./pages/MyProfile/index";
-import ToursPage from "./pages/ToursPage"
-import Registration from './components/Auth/RegistrationAuth';
-import CurrentTourPage from './pages/CurrrentTours';
+import ToursPage from "./pages/ToursPage";
+import Registration from "./components/Auth/RegistrationAuth";
 
 const App = () => {
   return (
@@ -15,9 +14,11 @@ const App = () => {
         <Route path="/" element={<MainPage/>}/>
         <Route path="/tours" element={<ToursPage/>}/>
         <Route path="/profile/*" element={<MyProfile/>}/>
-        <Route path='/registration' element={<Registration/>}/>
+
+        <Route path="/auth/*" element={<Registration />}/>
       </Routes>
     </div>
   );
 };
+
 export default App;
