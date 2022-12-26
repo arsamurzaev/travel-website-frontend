@@ -16,7 +16,7 @@ import { fetchTour } from "../../app/features/tourSlice";
 import { useEffect } from "react";
 import { getOrganization } from "../../app/features/organization.slice";
 import { getHotels } from "../../app/features/hotelSlice";
-
+//123
 const MainPage = () => {
   const dispatch = useDispatch();
   const tours = useSelector((state) => state);
