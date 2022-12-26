@@ -5,16 +5,12 @@ const initialState = {
     loading: false,
     error: null
 }
-
+//21w3
 export const fetchBasket = createAsyncThunk(
     "get/basket", 
     async (_, thunkAPI)=>{
     try {
-        const res = await fetch('http://localhost:4000/get/basket',{
-           method: "GET", 
-           Authorization: `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzYTczNDNlNTAwMTIzODY2YTE4NmRmOCIsImlhdCI6MTY3MTk5MTMyMywiZXhwIjoxNjcyMDc3NzIzfQ.G57IiQGOIkuvHiYQ-TN1s-ub4gGS_-Xq_RGRWUNCh2Q`
-        })
-
+        const res = await fetch('http://localhost:4000/get/basket')
         const basket = await res.json()
   
         if(basket.error){
