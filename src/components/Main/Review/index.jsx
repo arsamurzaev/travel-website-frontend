@@ -10,7 +10,7 @@ const MainReview = ({text,
 
    
   const [disclosure, setDisclosure] = useState(false);
-
+ //alks
   return (
     <div className={styles.review}>
       <div className={styles.row}>
