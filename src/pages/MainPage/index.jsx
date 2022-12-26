@@ -12,18 +12,23 @@ import HotelsSlider from "../../components/Main/HotelsSlider";
 import StockSlider from "../../components/Main/StockSlider";
 import Footer from "../../components/Footer";
 import { useDispatch, useSelector } from "react-redux";
+import { fetchTour } from "../../app/features/tourSlice";
 import { useEffect } from "react";
-import { getComments } from "../../app/features/comment.slice";
-import Comments from "../../components/Main/Review/comments/Comments";
+import { getOrganization } from "../../app/features/organization.slice";
+import { getHotels } from "../../app/features/hotelSlice";
 
 const MainPage = () => {
-  //asdas
-  const dispatch = useDispatch()
-  useEffect(()=>{
-    dispatch(getComments())
-  }, [])
-  const comments = useSelector((state)=>state.comments.comments)
-  console.log(comments);
+  const dispatch = useDispatch();
+  const tours = useSelector((state) => state);
+
+  useEffect(() => {
+    dispatch(fetchTour());
+    dispatch(getOrganization());
+    dispatch(getHotels());
+  }, [dispatch]);
+
+  console.log(tours);
+
   const settings = {
     dots: true,
     infinite: true,
@@ -160,7 +165,8 @@ const MainPage = () => {
         </div>
       </section>
       <section>
-        <div className={styles.container}>{/* Пустой тег */}
+        <div className="container">
+          {/* Пустой тег */}
           <div className={styles.stock}>
             {/* <h2 className={styles.title}></h2> */}
             <div className={styles.slider}>
