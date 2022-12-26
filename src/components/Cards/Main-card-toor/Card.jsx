@@ -4,6 +4,12 @@ import styles from "./CardMain.module.scss";
 import img from "../../../img/Card/Rectangle 9.png";
 import { Carousel } from "react-bootstrap";
 import { Link } from "react-router-dom";
+<<<<<<< HEAD
+=======
+
+import { motion } from "framer-motion";
+
+>>>>>>> 85dedfbe95727248135206c901721ec90d64a8b7
 // import { fetchTour } from "../../../app/features/tourSlice";
 import {ReactComponent as Heart} from "../../../img/Card/Vector.svg";
 
@@ -48,7 +54,19 @@ const Card = ({name, rooms, route,price}) => {
               </div>
             </div>
 
-            <button onClick={()=>handleAddTourBasket()} className={styles.btn}>от {price} ₽ </button>
+
+            <motion.button
+            initial={{ opacity: 0.9 }}
+            whileHover={{
+              scale: 1.1,
+              // transition: { duration: 0.5 },
+            }}
+            whileTap={{ scale: 0.9 }}
+            whileInView={{ opacity: 1 }}
+            className={styles.btn}>от 61 028 ₽ 
+            onClick={()=>handleAddTourBasket()}</motion.button>
+
+
           </div>
         </Link>
       </div>
