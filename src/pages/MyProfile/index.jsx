@@ -5,7 +5,7 @@ import PersonalData from "../../components/personalData/personalData";
 import PersonalFavorites from "../../components/PersonalFavorites/PersonalFavorites";
 import PersonalOrders from "../../components/PersonalOrders/Index";
 import styles from "./myProfile.module.scss";
-
+//My profile
 const MyProfile = () => {
   return (
     <div>
