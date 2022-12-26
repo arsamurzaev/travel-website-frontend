@@ -7,11 +7,8 @@ const MainReview = ({text,
   service,
   conditions,
   userId}) => {
-    console.log(userId);
-  
 
- 
-
+   
   const [disclosure, setDisclosure] = useState(false);
 
   return (
@@ -21,7 +18,7 @@ const MainReview = ({text,
           <div className={styles.avatar}>
             <img src={img} alt="" />
             <div className={styles.userInfo}>
-              <div className={styles.fullname}>{userId.firstName}</div>
+              <div className={styles.fullname}>{userId?.firstName ? userId.firstName: ""}</div>
               <div className={styles.home}>Чехия / Прага</div>
             </div>
           </div>
