@@ -11,9 +11,22 @@ import CallTour from "../../components/Tour/CallTour";
 import HotelsSlider from "../../components/Main/HotelsSlider";
 import StockSlider from "../../components/Main/StockSlider";
 import Footer from "../../components/Footer";
-
+import { useDispatch, useSelector } from "react-redux";
+import { fetchTour } from "../../app/features/tourSlice";
+import { useEffect } from "react";
+import { getOrganization } from "../../app/features/organization.slice";
 
 const MainPage = () => {
+  const dispatch = useDispatch();
+  const tours = useSelector(state => state.tours)
+
+  useEffect(() => {
+    dispatch(fetchTour());
+    dispatch(getOrganization())
+  }, [dispatch]);
+
+  console.log(tours);
+
   const settings = {
     dots: true,
     infinite: true,
@@ -141,7 +154,8 @@ const MainPage = () => {
         </div>
       </section>
       <section>
-        <div className={styles.container}>{/* Пустой тег */}
+        <div className={styles.container}>
+          {/* Пустой тег */}
           <div className={styles.stock}>
             {/* <h2 className={styles.title}></h2> */}
             <div className={styles.slider}>

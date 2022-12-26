@@ -6,19 +6,15 @@ import like_svg from "../../img/Header/like.svg";
 import user_svg from "../../img/Header/user.svg";
 import basket_svg from "../../img/Header/basket.svg";
 import { Link } from "react-router-dom";
-import { useDispatch } from "react-redux";
-import { fetchTour } from "../../app/features/tourSlice";
+import Registration from "../Auth/RegistrationAuth";
+
 
 const Header = () => {
-  const dispatch = useDispatch()
-  useEffect(()=>{
-    dispatch(fetchTour())
-  }, [dispatch])
   return (
     <header>
       <div className={styles.header}>
         <div className={styles.logo}>
-          <Link to='/'>
+          <Link to="/">
             <img src={logo_svg} alt="" />
           </Link>
           <button>Подобрать тур</button>
@@ -36,11 +32,13 @@ const Header = () => {
               <img src={like_svg} alt="" />
             </button>
             <button>
-            <Link to="/profile/orders"><img src={basket_svg} alt="" /></Link>
-              
+              <Link to="/profile/orders">
+                <img src={basket_svg} alt="" />
+              </Link>
             </button>
             <Link to="/profile">
               <button>
+                {}
                 <img src={user_svg} alt="" />
               </button>
             </Link>
