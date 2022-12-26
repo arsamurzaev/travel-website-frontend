@@ -11,6 +11,5 @@ export const store = configureStore({
         reducer: organizationSlice,
         authSlice: applicationSlice,
         tours: tourSlice,
-        
     }
 })
