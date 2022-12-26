@@ -4,12 +4,9 @@ import styles from "./CardMain.module.scss";
 import img from "../../../img/Card/Rectangle 9.png";
 import { Carousel } from "react-bootstrap";
 import { Link } from "react-router-dom";
-<<<<<<< HEAD
-=======
 
 import { motion } from "framer-motion";
 
->>>>>>> 85dedfbe95727248135206c901721ec90d64a8b7
 // import { fetchTour } from "../../../app/features/tourSlice";
 import {ReactComponent as Heart} from "../../../img/Card/Vector.svg";
 
@@ -50,7 +47,7 @@ const Card = ({name, rooms, route,price}) => {
               <div className={styles.city}>{route[0].split(",")}</div>
               <div className={styles.nameHome}>{name}</div>
               <div className={styles.nomer}>
-                Bed & Breakfast | Двухместный номер
+                Bed & Breakfast | {rooms}
               </div>
             </div>
 
@@ -63,10 +60,8 @@ const Card = ({name, rooms, route,price}) => {
             }}
             whileTap={{ scale: 0.9 }}
             whileInView={{ opacity: 1 }}
-            className={styles.btn}>от 61 028 ₽ 
-            onClick={()=>handleAddTourBasket()}</motion.button>
-
-
+            className={styles.btn}
+            onClick={()=>handleAddTourBasket()}>от {price} ₽ </motion.button>
           </div>
         </Link>
       </div>

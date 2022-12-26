@@ -1,9 +1,12 @@
 import React from "react";
+import { useSelector } from "react-redux";
 import styles from "./personalOrders.module.scss";
 
 const Order = ({route,
   price,
   info}) => {
+    const basket = useSelector((state)=> state.basket.basket)
+    console.log(basket);
   return (
     <div className={styles.Order}>
       <div className={styles.row}>

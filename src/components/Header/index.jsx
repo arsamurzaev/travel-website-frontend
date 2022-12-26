@@ -33,8 +33,7 @@ const Header = () => {
             // transition: { duration: 0.5 },
           }}
           whileTap={{ scale: 0.9 }}
-          whileInView={{ opacity: 1 }} 
-          >Подобрать тур</motion.button>
+          whileInView={{ opacity: 1 }} >Подобрать тур</motion.button>
 
         </div>
         <div className={styles.infa}>
