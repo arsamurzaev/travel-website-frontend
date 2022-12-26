@@ -3,12 +3,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import MainPage from "./pages/MainPage";
 import { Route, Routes } from "react-router";
 import MyProfile from "./pages/MyProfile/index";
-<<<<<<< HEAD
 import ToursPage from "./pages/ToursPage";
 import Registration from "./components/Auth/RegistrationAuth";
-=======
-import ToursPage from "./pages/ToursPage"
->>>>>>> main
 
 const App = () => {
   return (
@@ -24,4 +20,5 @@ const App = () => {
     </div>
   );
 };
+// 
 export default App;
