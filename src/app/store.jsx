@@ -1,6 +1,6 @@
-import { configureStore } from "@reduxjs/toolkit";
-import organizationSlice from "../slices/organization.slice";
+// import { configureStore } from "@reduxjs/toolkit";
+// import organizationSlice from "../slices/organization.slice";
 
-export const store = configureStore({
-    reducer: organizationSlice
-})
+// export const store = configureStore({
+//     reducer: organizationSlice
+// })

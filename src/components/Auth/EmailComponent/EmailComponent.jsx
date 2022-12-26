@@ -2,15 +2,15 @@ import React, { useState } from 'react';
 import styles from './EmailComponent.module.scss'
 
 const EmailComponent = () => {
-
     const [mail, setMail] = useState('')
     const [errMail, setErrMail] = useState(false)
-
+    
 
 
     // handlers 
     const handleErrMail = async (e) => {
         // карочет вохможно хендлер заменим ответом с бэка
+
     }
 
     return (
@@ -19,7 +19,6 @@ const EmailComponent = () => {
             <input
                 className={styles.mail_input}
                 onChange={(e) => setMail(e.target.value)}
-                onBlur={(e) => handleErrMail()}
                 value={mail}
                 type="text"
             />
