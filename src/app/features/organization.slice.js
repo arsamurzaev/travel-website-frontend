@@ -28,7 +28,7 @@ export const getOrganization = createAsyncThunk(
     try {
       const responseGet = await fetch("/organization");
       const organ = await responseGet.json();
-      console.log(organ);
+      return organ  
     } catch (error) {
       return thunkAPI.rejectWithValue(error.message);
     }

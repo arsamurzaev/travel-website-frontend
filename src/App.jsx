@@ -5,16 +5,17 @@ import { Route, Routes } from "react-router";
 import MyProfile from "./pages/MyProfile/index";
 import ToursPage from "./pages/ToursPage"
 import Registration from './components/Auth/RegistrationAuth';
+import CurrentTourPage from './pages/CurrrentTours';
 
 const App = () => {
   return (
     <div className="App">
       <Header />
-      <Registration/>
       <Routes>
         <Route path="/" element={<MainPage/>}/>
         <Route path="/tours" element={<ToursPage/>}/>
         <Route path="/profile/*" element={<MyProfile/>}/>
+        <Route path='/registration' element={<Registration/>}/>
       </Routes>
     </div>
   );

@@ -12,13 +12,14 @@ import RegComponent from "./RegComponent/RegComponent";
 const Registration = () => {
   const [authReg, setAuthReg] = useState("Авторизация");
 
+  const [close, setClose] = useState(false)
   // Функции
 
   return (
-    <div className={styles.container}>
+    <div className={styles.container} style={close ? {display: 'none'} : {display: 'block'}}>
       <div className={styles.reg_card}>
         <div className={styles.close_block}>
-          <div className={styles.close}>✕</div>
+          <div className={styles.close} onClick={() => setClose(!close)}>✕</div>
         </div>
 
         <h1 className={styles.h1}>

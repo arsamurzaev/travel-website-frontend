@@ -4,18 +4,19 @@ import styles from "./CardMain.module.scss";
 import img from "../../../img/Card/Rectangle 9.png";
 import { Carousel } from "react-bootstrap";
 import { Link } from "react-router-dom";
+
+import { motion } from "framer-motion";
+
 // import { fetchTour } from "../../../app/features/tourSlice";
-import {ReactComponent as Heart} from "../../../img/Card/Vector.svg";
+import { ReactComponent as Heart } from "../../../img/Card/Vector.svg";
 
-
-const Card = ({name, rooms, route,price}) => {
-  const handleAddTourBasket = () =>{
-    alert(123)
-  }
+const Card = ({ name, rooms, route, price }) => {
+  const handleAddTourBasket = () => {
+    alert(123);
+  };
   return (
     <>
       <div className={styles.card}>
-       
         <Link>
           <Carousel>
             <Carousel.Item>
@@ -36,7 +37,7 @@ const Card = ({name, rooms, route,price}) => {
           </Carousel>
 
           <button className={styles.heart}>
-            <Heart className={styles.imgS}/>
+            <Heart className={styles.imgS} />
           </button>
 
           <div className={styles.dosc}>
@@ -48,7 +49,19 @@ const Card = ({name, rooms, route,price}) => {
               </div>
             </div>
 
-            <button onClick={()=>handleAddTourBasket()} className={styles.btn}>от {price} ₽ </button>
+            <motion.button
+              initial={{ opacity: 0.9 }}
+              whileHover={{
+                scale: 1.1,
+                // transition: { duration: 0.5 },
+              }}
+              whileTap={{ scale: 0.9 }}
+              whileInView={{ opacity: 1 }}
+              className={styles.btn}
+              onClick={() => handleAddTourBasket()}
+            >
+              от 61 028 ₽
+            </motion.button>
           </div>
         </Link>
       </div>

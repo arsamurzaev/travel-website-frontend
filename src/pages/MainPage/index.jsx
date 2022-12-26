@@ -15,14 +15,16 @@ import { useDispatch, useSelector } from "react-redux";
 import { fetchTour } from "../../app/features/tourSlice";
 import { useEffect } from "react";
 import { getOrganization } from "../../app/features/organization.slice";
+import { getHotels } from "../../app/features/hotelSlice";
 
 const MainPage = () => {
   const dispatch = useDispatch();
-  const tours = useSelector(state => state.tours)
+  const tours = useSelector((state) => state);
 
   useEffect(() => {
     dispatch(fetchTour());
-    dispatch(getOrganization())
+    dispatch(getOrganization());
+    dispatch(getHotels());
   }, [dispatch]);
 
   console.log(tours);
@@ -154,7 +156,7 @@ const MainPage = () => {
         </div>
       </section>
       <section>
-        <div className={styles.container}>
+        <div className="container">
           {/* Пустой тег */}
           <div className={styles.stock}>
             {/* <h2 className={styles.title}></h2> */}
