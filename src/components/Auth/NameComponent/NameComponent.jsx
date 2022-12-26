@@ -1,3 +1,5 @@
+// ненужная хреьнт
+
 import React, { useState } from 'react';
 import styles from './NameComponent.module.scss'
 const NameComponent = () => {
