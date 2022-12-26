@@ -45,7 +45,7 @@ const Card = ({ name, rooms, route, price }) => {
               <div className={styles.city}>{route[0].split(",")}</div>
               <div className={styles.nameHome}>{name}</div>
               <div className={styles.nomer}>
-                Bed & Breakfast | Двухместный номер
+                Bed & Breakfast | {rooms}
               </div>
             </div>
 

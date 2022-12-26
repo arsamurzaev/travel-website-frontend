@@ -36,7 +36,7 @@ const MainPage = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
   };
-
+//Main pasge
   return (
     <main>
       <section>
@@ -105,11 +105,20 @@ const MainPage = () => {
         <div className="container">
           <div className="sl">
             <Slider {...settings}>
-              <MainReview />
-              <MainReview />
-              <MainReview />
+              {comments.map((item)=>{
+                return (<MainReview 
+                  key={item.userId}
+                  text = {item.text}
+                  updatedAt = {item.updatedAt}
+                  service = {item.service}
+                  conditions = {item.conditions}
+                  userId = {item.userId}
+                />)
+              })}
+              
             </Slider>
           </div>
+          {/* <Comments /> */}
         </div>
       </section>
       <section>
