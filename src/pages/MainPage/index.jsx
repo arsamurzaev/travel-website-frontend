@@ -11,9 +11,19 @@ import CallTour from "../../components/Tour/CallTour";
 import HotelsSlider from "../../components/Main/HotelsSlider";
 import StockSlider from "../../components/Main/StockSlider";
 import Footer from "../../components/Footer";
-
+import { useDispatch, useSelector } from "react-redux";
+import { useEffect } from "react";
+import { getComments } from "../../app/features/comment.slice";
+import Comments from "../../components/Main/Review/comments/Comments";
 
 const MainPage = () => {
+  //asdas
+  const dispatch = useDispatch()
+  useEffect(()=>{
+    dispatch(getComments())
+  }, [])
+  const comments = useSelector((state)=>state.comments.comments)
+  console.log(comments);
   const settings = {
     dots: true,
     infinite: true,
@@ -90,11 +100,20 @@ const MainPage = () => {
         <div className="container">
           <div className="sl">
             <Slider {...settings}>
-              <MainReview />
-              <MainReview />
-              <MainReview />
+              {comments.map((item)=>{
+                return (<MainReview 
+                  key={item.userId}
+                  text = {item.text}
+                  updatedAt = {item.updatedAt}
+                  service = {item.service}
+                  conditions = {item.conditions}
+                  userId = {item.userId}
+                />)
+              })}
+              
             </Slider>
           </div>
+          {/* <Comments /> */}
         </div>
       </section>
       <section>

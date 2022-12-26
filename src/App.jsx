@@ -6,6 +6,7 @@ import MyProfile from "./pages/MyProfile/index";
 import ToursPage from "./pages/ToursPage"
 
 const App = () => {
+  console.log(123);
   return (
     <div className="App">
       <Header />

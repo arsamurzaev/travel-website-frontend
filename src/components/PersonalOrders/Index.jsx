@@ -1,14 +1,26 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { fetchBasket } from "../../app/features/basket.slice";
 import Order from "./Order";
 import styles from "./personalOrders.module.scss";
 
 const PersonalOrders = () => {
+
+  const dispatch = useDispatch()
+
+  useEffect(()=>{
+    dispatch(fetchBasket())
+  }, [dispatch])
+
+  const tours = useSelector((state)=>state.tours.tours)
+
   const [orders, setOrders] = useState(0)
+
   const handleOrderClick = (i) =>{
     setOrders(i)
   }
-  console.log(orders);
+
   const list = ["Все", "Прошлые", "Актуальные", "Аннулированные"]
   return (
       <div className={styles.PersonalOrders}>
@@ -35,7 +47,15 @@ const PersonalOrders = () => {
             <div className={styles.link}>Аннулированные</div> */}
           </div>
           <div className={styles.items}>
-            <Order />
+            {tours?.map((item)=>{
+              console.log(item);
+              return(<Order
+                route = {item.route.MainPointsOfVisit}
+                price = {item.info.price}
+                info = {item.info}
+                />)
+            })}
+            
           </div>
           <div className={styles.documents}></div>
         </div>
