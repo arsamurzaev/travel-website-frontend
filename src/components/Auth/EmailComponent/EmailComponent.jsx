@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import styles from './EmailComponent.module.scss'
+import React, { useState } from "react";
+import styles from "./EmailComponent.module.scss";
 
 const EmailComponent = () => {
     const [mail, setMail] = useState('')

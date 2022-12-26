@@ -9,7 +9,7 @@ const initialState = {
 export const addUser = createAsyncThunk("dataUser/add", async(data, thunkAPI)=>{
     console.log(data);
     try {
-        const res = await fetch("http://localhost:4000/add/user", {
+        const res = await fetch("/add/user", {
             method:"POST", 
             body: JSON.stringify({
             firstName: data.firstName,
